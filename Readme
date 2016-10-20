@@ -1,0 +1,58 @@
+IMS2012: Model logistické centrály
+@autor: Jiří Hon         xhonji01
+@autor: Vojtech Simetka  xsimet00
+
+Spusteni programu:
+Příkaz make:    Parametry:
+make run        ./model        Spustí model jedenkrát a vypíše statistiky.
+make cars       ./model -a n   Spustí model vícenásobně a iteruje počtem aut
+                                v modelu.
+make capacity   ./model -a k   Spustí model vícenásobně a iteruje kapacitou aut
+								v modelu.
+make packages   ./model -a p   Spustí model vícenásobně a zrychluje čas
+                                generování (a tedy i jejich počet) balíčků
+								v modelu.
+make offices    ./model-a o    Spustí model vícenásobně a mění pozici
+                                centrálního skladu.
+                -n N           Nastaví počet aut na hodnotu N. Lze kombinovat
+							    s ostatními parametry (platí poslední nastavená
+								hodnota).
+				-k N           Nastaví kapacitu aut na hodnotu K. Lze kombinovat
+								s ostatními parametry (platí poslední nastavená
+								hodnota).
+                -t N           Nastaví délku simulace na hodnotu N v minutách.
+				                Lze kombinovat s ostatními parametry (platí
+								poslední nastavená hodnota).
+				-o             Zapne debug mód.
+                -s c           Vypíše podrobnější informace o naložení každého
+				                auta.
+                -s c           Vypíše podrobnější informace o naložení všech
+				                 souhrnně aut.
+                -s puh         Vypíše histogram kolik zásilek nebylo před
+								otevřením pobočky doručeno.
+                -s dph         Vypíše histogram zobrazující zásilky doručené
+				                se zpožděním jeden a více dní.
+
+Seznam odevzdanych souboru:
+	calendar.cpp
+	car.cpp
+	exception.cpp
+	facts.cpp
+	main.cpp
+	model.cpp
+	office.cpp
+	packet.cpp
+	param.cpp
+	statistics.cpp
+	calendar.h
+	car.h
+	exception.h
+	facts.h
+	main.h
+	model.h
+	office.h
+	packet.h
+	param.h
+	statistics.h
+	Makefile
+	Readme
